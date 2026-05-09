@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Katarungang Pambarangay</title>
+
+<meta name="google-site-verification" content="87e_x_2pSHYPZHwRRVC1LaylrnBdXf_aRzxdrSaiEfk" />
+
+<meta name="description" content="Documented Conflict Cases in Libertad. A Barangay Justice Study led by Alexthon Macariola under the Katarungang Pambarangay program of the Department of the Interior and Local Government (DILG).">
+
+<meta name="keywords" content="Alexthon Macariola, Macariola DILG Research, Barangay Justice Study, Katarungang Pambarangay, DILG Research, Libertad Misamis Oriental">
+
+<meta name="author" content="Alexthon Macariola">
+
+<meta name="robots" content="index, follow">
+
+<style>
+body{
+    margin:0;
+    font-family:"Times New Roman", serif;
+    background:#f4f4f4;
+    color:#222;
+    scroll-behavior:smooth;
+}
+
+/* HEADER */
+header{
+    background:#4f5f46;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 40px;
+}
+header img{width:70px;}
+header h2{margin:0;font-size:18px;}
+
+/* HERO */
+.hero{
+    max-width:1100px;
+    margin:30px auto;
+    background:#5b6b52;
+    border-radius:18px;
+    padding:60px 40px;
+    text-align:center;
+    color:#fff;
+}
+.hero p{max-width:750px;margin:0 auto 30px;}
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+.hero-buttons button{
+    padding:12px 28px;
+    border-radius:30px;
+    border:1px solid #fff;
+    background:#fff;
+    font-weight:bold;
+    cursor:pointer;
+}
+.hero-buttons .secondary{
+    background:transparent;
+    color:#fff;
+}
+
+/* FEATURES */
+.features{
+    max-width:1100px;
+    margin:40px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    text-align:center;
+}
+
+/* INTRO */
+.intro-text{
+    max-width:900px;
+    margin:40px auto;
+    background:#fff;
+    padding:35px;
+    border-radius:14px;
+}
+
+/* SLIDESHOW */
+.study-slideshow{
+    max-width:1100px;
+    margin:30px auto;
+    aspect-ratio:21/9;
+    overflow:hidden;
+    border-radius:14px;
+}
+.study-slideshow img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* CONTEXT */
+.study-context{
+    max-width:900px;
+    margin:30px auto;
+    background:#fff;
+    padding:45px;
+    border-radius:14px;
+    line-height:1.9;
+}
+
+/* RESEARCH */
+#research{
+    max-width:900px;
+    margin:60px auto;
+    background:#fff;
+    padding:45px;
+    border-radius:14px;
+}
+.pdf-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:15px;
+    margin-top:25px;
+}
+.pdf-grid a{
+    background:#4f5f46;
+    color:#fff;
+    padding:22px 0;
+    text-align:center;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
+}
+.research-leader{
+    margin-top:30px;
+    text-align:center;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/* ABOUT */
+#about{
+    display:none;
+    max-width:900px;
+    margin:60px auto;
+    background:#fff;
+    padding:45px;
+    border-radius:14px;
+}
+#about img.credentials{
+    width:100%;
+    height:auto;
+    margin-bottom:30px;
+}
+.foundation{
+    text-align:center;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+.foundation-images{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.foundation-images img{
+    width:48%;
+    border-radius:10px;
+}
+
+/* UTILITY */
+.hidden{display:none;}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="dilg-logo.png">
+    <h2>BARANGAY JUSTICE</h2>
+</header>
+
+<section class="hero">
+    <h1>Documented Conflict Cases in Barangays of Libertad, Misamis Oriental</h1>
+    <p>
+        A descriptive study examining the types, frequency, and resolution procedures
+        of conflicts processed under the Katarungang Pambarangay system.
+    </p>
+    <div class="hero-buttons">
+        <button onclick="openResearch()">View Research</button>
+        <button class="secondary" onclick="openAbout()">Macariola</button>
+    </div>
+</section>
+
+<section class="features">
+    <div><b>OFFICIAL RECORDS</b><br>Barangay case files only</div>
+    <div><b>DESCRIPTIVE STUDY</b><br>No Surveys, Interviews, or Opinion-based Inputs</div>
+    <div><b>RESOLUTION PROCEDURES</b><br>Mediation, Conciliation and Arbitration Procedures</div>
+    <div><b>COMMUNITY FOCUS</b><br>Libertad, Misamis Oriental</div>
+</section>
+
+<section class="intro-text">
+    This study examines conflict cases officially recorded in selected barangays of Libertad,
+    Misamis Oriental using existing barangay documentation.
+</section>
+
+<section class="study-slideshow" id="slideshow">
+    <img id="slideshowImg" src="gallery1.jpg">
+</section>
+
+<section class="study-context" id="context">
+<p>
+Conflicts within communities are a normal aspect of everyday social life and require
+effective barangay-level dispute resolution.
+</p>
+</section>
+
+<section id="research">
+<h2>READ STUDY</h2>
+<div class="pdf-grid">
+    <a href="research1.pdf" target="_blank">1</a>
+    <a href="research2.pdf" target="_blank">2</a>
+    <a href="research3.pdf" target="_blank">3</a>
+    <a href="research4.pdf" target="_blank">4</a>
+    <a href="research5.pdf" target="_blank">5</a>
+    <a href="research6.pdf" target="_blank">6</a>
+</div>
+<div class="research-leader">
+    Alexthon Macariola, Researcher
+</div>
+</section>
+
+<section id="about">
+    <img src="credentials.png" class="credentials">
+    <div class="foundation">ACADEMIC CREDENTIALS</div>
+    <div class="foundation-images">
+        <img src="advocacy1.jpg">
+        <img src="advocacy2.jpg">
+    </div>
+</section>
+
+<script>
+/* SLIDESHOW */
+let s=1;
+setInterval(()=>{
+    const img=document.getElementById("slideshowImg");
+    if(!img) return;
+    s=s<7?s+1:1;
+    img.src="gallery"+s+".jpg";
+},4000);
+
+function openAbout(){
+    document.getElementById("about").style.display="block";
+    document.getElementById("research").classList.add("hidden");
+    document.getElementById("slideshow").classList.add("hidden");
+    document.getElementById("context").classList.add("hidden");
+}
+
+function openResearch(){
+    document.getElementById("about").style.display="none";
+    document.getElementById("research").classList.remove("hidden");
+    document.getElementById("slideshow").classList.remove("hidden");
+    document.getElementById("context").classList.remove("hidden");
+    document.getElementById("research").scrollIntoView({behavior:"smooth"});
+}
+</script>
+
+</body>
+</html>
